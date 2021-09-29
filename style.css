@@ -26,10 +26,34 @@ body {
   text-align: center;
 }
 
+
 nav {
-  background: #a7ffeb;
   grid-area: nav;
-  padding-top: var(--main-padding);
+ float: left;
+}
+*{transition:all 0.3s ease-in-out;}
+
+.container1{
+  clear:both;
+  overflow:auto;
+}
+nav{
+  float:right;
+}
+
+.logo img{
+  float:left;
+  margin-left: 2rem;
+  margin-top: 1.8rem;
+}
+ul li{
+  display: inline-block;
+  padding:10px;
+  font-size: 20px;
+}
+
+ul li:hover{
+  color:#00a69c;
 }
 
 header {
@@ -41,7 +65,7 @@ header {
   grid-template-rows: 1fr;
   grid-template-areas:
   "text-header img-header";
-  height: 400px;
+  height: 450px;
 }
 
 .text-header{
@@ -133,6 +157,18 @@ li{
   color: #0c1753;
   text-align: left!important;
   
+}
+
+
+button{
+  background: #ffe101;
+  color: #00a69c;
+  font-size: 30px;
+  border: 2px solid #ffe101;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 5px;
+  box-shadow: 0 0px 4px 1px #9a8d8d;
 }
 
 
